@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel=stylesheet type="text/css" href="style.css" />
+	<title>Document</title>
+</head>
+<body>	
+	<div id="image">
+		<form action="file.php" method="GET" enctype="multipart/form-data">
+			<h1>WEB DEVELOPMENT COURSE</h1>
+			<h2>Register form</h2>
+			<div class="input_up">
+				<input type="text" name="user_name" placeholder="User Name">
+				<input type="password" name="password" placeholder="password">
+			</div>
+			<div class="input_fl">							
+				<input type="text" name="first_name" placeholder="First Name">
+				<input type="text" name="last_name" placeholder="Last Name">
+			</div>
+			<div class="select">
+				<p>Select your package:</p>
+				<select name="age_category" dir="">
+					<option>--Select--</option>
+					<option>Lections only</option>
+					<option>Lections + Food.</option>
+					<option>Lections + Food + Hotel</option>
+				</select>
+			</div>		
+			<div class="radio">
+				<p>Create your amazing cours by selecting best lestions for you</p><hr>
+				HTML  <input type="checkbox" name="HTML" value="1"/>
+				CSS  <input type="checkbox" name="CSS" value="1"/>
+				PHP  <input type="checkbox" name="PHP" value="1"/>
+				JS  <input type="checkbox" name="JS" value="1"/>
+				MySQL  <input type="checkbox" name="MySQL" value="1"/>
+			</div><hr>
+			<button type="submit" name="submit">Send your form!</button>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body{
+	margin: 0 auto;	
+}
+#image{
+  background-image: url("tour.jpg");
+  background-color: #cccccc;
+  height: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#image form{
+	position: absolute;
+	bottom: 1%;
+	left: 65%;
+	background-color:#00000070;
+	text-align: center;
+	color:#02010c;
+	border:8px solid #60a2bf1a; 
+	padding-bottom: 10px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+#image h1, h2{
+	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+}
+
+#image p{
+	font-size: 20px;
+	display: block;
+}
+#image .input input{
+	width: 200px;
+	display: block;
+	margin: 20px auto;
+	box-shadow: 0 0 10px #000;
+	border:1px solid #f2f2f2;
+	background-color: #f2f2f2;
+	padding: 4px;
+	text-align: center;
+}
+#image .radio{
+	display: inline;
+}
+#image .select select{
+	width: 200px;
+	display: block;
+	margin: 20px auto;
+	box-shadow: 0 0 10px #000;
+	border:1px solid #f2f2f2;
+	background-color: #f2f2f2;
+	padding: 4px;
+	text-align: center;
+	text-align-last: center;
+}
+#image textarea{
+	width: 200px;
+	height: 100px;
+	resize: none;
+	display: block;
+	margin: 20px auto;
+	box-shadow: 0 0 10px #000;
+	border:1px solid #f2f2f2;
+	background-color: #f2f2f2;
+	padding: 4px;
+	text-align: center;
+}
+
+#image button{
+	width: 200px;
+	height: 40px;
+	background-color: #072133ad;
+	color: white;
+}
+
+::placeholder{
+ text-transform: uppercase;
+ font-size: 12px;
+ font-weight: bold;
+}

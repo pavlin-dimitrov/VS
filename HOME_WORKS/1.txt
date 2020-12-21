@@ -1,0 +1,3 @@
+HTML записки.
+emmet plugin za HTML.
+C:\Users\Dell\AppData\Roaming\Sublime Text 3\Installed Packages

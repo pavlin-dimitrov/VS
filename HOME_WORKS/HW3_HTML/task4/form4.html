@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel=stylesheet type="text/css" href="style.css" />
+	<title>Document</title>
+</head>
+<body>	
+	<div id="image">
+		<form action="file.php" method="GET" enctype="multipart/form-data">
+			<h1>Hiking Tour</h1>
+			<h2>User form</h2>
+			<div class="input">			
+				<input type="text" name="first_name" placeholder="First Name...">
+				<input type="text" name="last_name" placeholder="Last Name...">
+				<input type="number" name="age" placeholder="Yor age is...">
+			</div>
+			<div class="select">
+				<p>Age category:</p>
+				<select name="age_category" dir="">
+					<option>--Select--</option>
+					<option>До 18г.</option>
+					<option>18г. - 40г.</option>
+					<option>41г. - 55г.</option>
+				</select>
+			</div>		
+			<div class="radio">
+				<p>Are there any chronic diseases?</p>
+				Yes<input type="radio" name="deseases" value="yes">
+				No<input type="radio" name="deseases" value="no">
+			</div>
+			<textarea name="description" maxlength="250" placeholder="Describe your diseases, if you have any..."></textarea>
+			<button type="submit" name="submit">Send your form!</button>
+		</form>
+	</div>
+</body>
+</html>

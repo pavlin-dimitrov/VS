@@ -1,0 +1,24 @@
+table {
+	border-bottom: 4px solid red;
+	border-top: 4px solid red;
+	border-left: 4px solid red;
+	border-right: 4px solid red;
+	border-collapse: collapse;
+	background-color: grey;
+	color: yellow;
+}
+td{
+	border: 2px dotted black;
+}
+
+tr {
+	border: 2px dotted black;
+}
+.org{
+background-color: orange;
+color: blue;
+}
+.blu{
+	background-color: lightblue;
+	color:darkred;
+}

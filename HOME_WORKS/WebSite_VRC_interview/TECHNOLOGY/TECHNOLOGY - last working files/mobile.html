@@ -1,0 +1,157 @@
+﻿
+<!DOCTYPE html>
+<html lang="bg">
+  <head>
+   <title>TECH NERD</title>
+   	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel=stylesheet type="text/css" href="mystyle.css" />
+	  <link rel=stylesheet type="text/css" href="gall.css" />
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="script.js"></script>
+  </head>
+<body>
+
+<!--Картинка и заглавие на сайта-->
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">МОБИЛНИ ТЕХНОЛОГИИ</h1>
+    <p>Технологиите на 20-ти век!</p>
+  </div>
+</div>
+
+<!--Навигационен панел-->
+<div class="topnav" id="mytopnav">
+  <a href="index.html">Начало</a>
+  <a class="active" href="mobile.html">Мобилни технологии</a>
+  <a href="computers.html">Компютърни технологии</a>
+  <a href="#transport.html">Транспортни средства</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div style="padding-left:16px"></div>
+
+<!--GALLERY-->
+
+<br>
+<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<img src="images/mobile/first.jpg" alt="Phone1" style="width:100%">
+				<div class="text">The ffffffffff fffffff ffffffff fffffffff ffffffffff<span class="dots">...</span><span class="more">ffffffffff fffffff ffffffff fffffffff ffffffffff First
+								  </span>
+										<button class="read" style="background-color: #ff9f55; color: #f2f2f2";>Read more</button>
+				</div>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images/mobile/NokiaSenator.png" alt="Phone2" style="width:100%">
+				<div class="text">Mobira (Nokia)    <span class="dots">...</span><span class="more">      Senator [1982]
+								  </span>
+										<button class="read" style="background-color: #ff9f55; color: #f2f2f2";>Read more</button>
+				</div>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images/mobile/Nokia1011.png" alt="Phone3" style="width:100%">
+				<div class="text">Nokia 1011    <span class="dots">...</span><span class="more">      [1992]
+								  </span>
+										<button class="read" style="background-color: #ff9f55; color: #f2f2f2";>Read more</button>
+				</div>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images/mobile/IBMsimon.png" alt="Phone4" style="width:100%">
+				<div class="text">IBM Simon    <span class="dots">...</span><span class="more">      [1994]
+								  </span>
+										<button class="read" style="background-color: #ff9f55; color: #f2f2f2";>Read more</button>
+				</div>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images/mobile/Nokia9000.png" alt="Phone5" style="width:100%">
+				<div class="text">Nokia 9000    <span class="dots">...</span><span class="more">      Communicator [1996]
+								  </span>
+										<button class="read" style="background-color: #ff9f55; color: #f2f2f2";>Read more</button>
+				</div>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images/mobile/MotorolaStarTAC.png" alt="Phone6" style="width:100%">
+				<div class="text">Motorola StarTAC    <span class="dots">...</span><span class="more">      [1996]
+								  </span>
+										<button class="read" style="background-color: #ff9f55; color: #f2f2f2";>Read more</button>
+				</div>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images/mobile/Nokia3310.png" alt="Phone7" style="width:100%">
+				<div class="text">Nokia 3310    <span class="dots">...</span><span class="more">      [2000]
+								  </span>
+										<button class="read" style="background-color: #ff9f55; color: #f2f2f2";>Read more</button>
+				</div>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images/mobile/iPhone.png" alt="Phone8" style="width:100%">
+				<div class="text">The iPhone    <span class="dots">...</span><span class="more">      [2007]
+								  </span>
+										<button class="read" style="background-color: #ff9f55; color: #f2f2f2";>Read more</button>
+				</div>
+		</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+function myFunction() {
+  var x = document.getElementById("mytopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
