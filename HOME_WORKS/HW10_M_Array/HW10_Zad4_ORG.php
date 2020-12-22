@@ -7,10 +7,10 @@ $arr = [$n];
 	<tbody>
 <?php
 for ($i=0; $i <= 3; $i++) { 
-	echo "<tr>";
 	$n[$i] = $m;
 	if ($i >= 3) {
 		for ($j=0; $j <=3 ; $j++) { 
+			echo "<tr>";
 		 	$arr[$i] = $n;
 		 	foreach ($arr[$i] as $key => $value) {
 		 		echo "<td>" . $value . "</td>";
