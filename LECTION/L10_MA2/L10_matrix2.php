@@ -6,6 +6,7 @@ $num =1;
 
 for ($i=0; $i < $rows; $i++) { 
 	$arr[$i] = [];
+
 	for ($j=0; $j < $cols ; $j++) { 
 		$arr[$i][$j] = $num;
 		$num++;
