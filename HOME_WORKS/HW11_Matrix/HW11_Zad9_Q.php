@@ -2,9 +2,9 @@
 $arr = [];
     $counter = 1;
     $startCol = 0;
-    $endCol = 4 - 1;
+    $endCol = 6 - 1;
     $startRow = 0;
-    $endRow = 4 - 1;
+    $endRow = 6 - 1;
     while ($startCol <= $endCol && $startRow <= $endRow) {
         for ($i = $startCol; $i <= $endCol; $i++) {
             $arr[$startRow][$i] = $counter;
