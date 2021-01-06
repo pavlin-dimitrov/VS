@@ -1,7 +1,8 @@
 <?php
 
 $arr = [2,11,2,3,0,2,];
-function search($input){
+$number = 0;
+function search($input, $arr){
  $found = 0;
  for ($i=0; $i < count($arr); $i++) { 
  	if ($arr[$i] == $input) {
@@ -15,4 +16,4 @@ function search($input){
  }
 }
 
-echo serch($number, $array);
+echo search($number, $arr);

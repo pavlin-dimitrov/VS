@@ -15,15 +15,16 @@ if (!isset($_GET['colors'])) {
 		}
 		$count2 = count($hex_splited);
 		for ($i=0; $i < $count2; $i++) { 
-			$arr_rgb[$i] = [];
 			for ($j=0; $j < 3; $j++) { 
-				foreach ($hex_splited as $value) {
 	 				$val = hexdec($hex_splited[$i][$j]);
 	 				$arr_rgb[$i][$j] = $val;
-	 			}
 	 		} 
 		}	
 }
+$max = max($arr_rgb);
+var_dump($max);
+$key = array_search($max, $arr_rgb);
+echo $key;
 echo "<table border='1'>";
 for ($m=0; $m < $count; $m++) {
 	echo "<tr>";
