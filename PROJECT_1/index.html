@@ -2,15 +2,23 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylesheet.css">
 	<title>Dress number</title>
 </head>
 <body>
+	<div class="header">
+  		<h1>CHECKING FOR DRESSES THAT ARE MORE GREEN THEN <span class="red">RED</span> AND <span class="yellow">YELLOW</span></h1>
+	</div>
+
 	<form action="script.php" method="post">
-	<p>HEX Colors here:</p>
-	<input type="colors" name="colors">
-	<p>CHECH IF ANY</p>
-	<input type="submit" name="submit" value="CHECK">
+	<p class="input_title"><b>HEX Colors here:</b></p>
+	<input class="input_text" type="colors" name="colors">
+	<input class="input_submit" type="submit" name="submit" value="CHECK">
 </form>
+
+	<div class="footer">
+  		<p class="creator"><i>Created by: Pavlin Dimitrov</i></p>
+	</div>
 	
 </body>
 </html>
