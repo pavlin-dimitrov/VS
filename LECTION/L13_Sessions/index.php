@@ -1,21 +1,30 @@
 <?php 
-	session_start();
-	$_SESSION['game_result'] = 0;
+$title = 'Start';
+$page_title = 'Game start';
+
+	include 'includes/header.php';
 ?>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Game</title>
-</head>
-<body>
-<h1>Start Game</h1>
-<p>Curent score: <?= $_SESSION['game_result'] ?>
-	<form method="post" action="question1.php">
-		Enter your name:
+	<?php $_SESSION['game_result'] = 0; ?>
+	<p>Current score: <?= $_SESSION['game_result'] ?></p>
+	<form method="post" action="">
+		Enter your name
 		<input type="text" name="name">
+		<?php if( isset( $_SESSION['error_name'] ) ){ echo $_SESSION['error_name']; }?>
 		<input type="submit" name="submit" value="start">
 	</form>
-	
-</body>
-</html>
+	<?php 
+	if( isset( $_POST['submit'] ) ){		
+		
+		if( empty( $_POST['name'] ) ){
+			$_SESSION['error_name'] = 'Name is required!';
+		}else{
+			$_SESSION['user_name'] = $_POST['name'];
+			unset( $_SESSION['error_name'] );
+			header('Location: question1.php');
+		}
+	}
+
+	?>
+<?php 
+	include 'includes/footer.php';
+?>

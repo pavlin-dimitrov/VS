@@ -1,19 +1,18 @@
 <?php 
-	session_start();
-	echo $_SESSION['user_name'];
-			if ($_POST['answer'] == 1) {
-		$_SESSION['game_result'] += 1;
-	}
+$title = 'Final results';
+$page_title = 'Final results';
+
+	include 'includes/header.php';
 ?>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Final Result</title>
-</head>
-<body>
-	<h1><?php echo $_SESSION['user_name']; ?></h1>
-	<p>Curent score: <?= $_SESSION['game_result']; ?></p>,
-	<a href="session_destroy.php">Exit</a>
-</body>
-</html>
+
+	<h3><?php echo $_SESSION['user_name']; ?>, 
+	<?php 
+		if( $_POST['answer'] == '1' ){
+			$_SESSION['game_result'] += 1;
+		}
+	?>
+		<span>Current score: <?= $_SESSION['game_result'] ?></span></h3>
+		<a href="session_destroy.php">Exit</a>
+<?php 
+	include 'includes/footer.php';
+?>
