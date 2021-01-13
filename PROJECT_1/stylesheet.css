@@ -1,62 +1,76 @@
-* {
-margin: 0;
-padding: 0;
+html{
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  color:#4CAF50;
 }
-body {
-  background-color: lightgreen;
+*, *::before, *:after{
+  box-sizing: inherit;
+  padding-left: 10;
+  padding-right: 10;
   margin: 0;
-  padding: 0;
 }
-.header{
-	padding: 5%;
-  	text-align: center;
-	 background: green;
-	 color: lightgreen;
-	 text-shadow: 2px 2px black;
+body{
+  background-color: #4caf50;
 }
-.red{
-	color: red;
+main{
+  margin: 1rem auto;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 5px 4px 15px 5px #214c23;
 }
-.yellow {
-	color: yellow;
+/********************
+        FORM
+********************/
+select, input, label, h1, p{
+  padding: 0.2rem 1rem;
+  font-size: 1.2rem;
+  color:#2a562c;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
-.footer {
-  position: fixed;
-  padding: 5%;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: green;
-  color: lightgreen;
+h1{
+  text-align: center;
 }
-.creator{
-  position: fixed;
-  padding: 0px;
-  text-align: right;
-  width: 100%;
-  left: 0;
-  bottom: 0;	
+p{
+  text-align: center;
 }
-.input_title{
-	position: relative;
-	padding: 0px;
-	text-align: center;
-	width: 100%;
-	left: 0;
-	top: 30%;
+select{
+  box-shadow:inset 2px 2px 7px 1px #6fe275;
+  color:#607D8B;
+
 }
-.input_text{
-	position: relative;
-/*	padding-left: 30%;
-	padding-right: 30%;*/
-    border: 2px solid green;
-    border-radius: 4px;
-    background-color: lightgreen;
-	text-align: center;
-	/*width: 40%;*/
-	left: 20%;
-	top: 30%;
-	color:green;
-	  height:500px;
-    width:500px;
+.input_text {
+  box-shadow:inset 2px 2px 7px 1px #6fe275;
+}
+.input_submit{
+  background-color: #88e28c;
+  box-shadow: 2px 2px 7px 1px #6fe275;
+}
+.form-box{
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.form-box label{
+  display: none;
+}
+.form-box input,
+.form-box select{
+  flex-basis: 100%;
+}
+/*******************
+    MEDIA QUERIES
+*******************/
+@media all and (min-width: 500px){
+  .form-box{
+
+  }
+  .form-box label{
+    display: block;
+  }
+  .form-box input,
+  .form-box select{
+
+  }
 }

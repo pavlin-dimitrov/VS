@@ -6,19 +6,35 @@
 	<title>Dress number</title>
 </head>
 <body>
-	<div class="header">
-  		<h1>CHECKING FOR DRESSES THAT ARE MORE GREEN THEN <span class="red">RED</span> AND <span class="yellow">YELLOW</span></h1>
-	</div>
-
+<main>
 	<form action="script.php" method="post">
-	<p class="input_title"><b>HEX Colors here:</b></p>
-	<input class="input_text" type="colors" name="colors">
-	<input class="input_submit" type="submit" name="submit" value="CHECK">
-</form>
-
-	<div class="footer">
-  		<p class="creator"><i>Created by: Pavlin Dimitrov</i></p>
-	</div>
+		<div class="form-box">
+			<h1>FIND YOUR GREENISH DRESS</h1>
+		</div>
+		
+		<div class="form-box">
+			<label>Clothes:</label>
+			<select name="clothes" dir="">
+					<option>--Select clothes--</option>
+					<option>Dresses</option>
+			</select>
+		</div>
+		<div class="form-box">
+			<label>Select color</label>
+			<select name="select_color" dir="">
+					<option>--Select color--</option>
+					<option>Greeen</option>
+			</select>
+		</div>
+		<div class="form-box">
+			<p><b>HEX Colors here:</b></p>
+			<input class="input_text" type="colors" name="colors">
+		</div>
+		<div class="form-box">
+			<input class="input_submit" type="submit" name="submit" value="CHECK">
+		</div>
+	</form>
+</main>
 	
 </body>
 </html>
