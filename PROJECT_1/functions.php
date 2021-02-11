@@ -4,7 +4,7 @@ function print_result($arr){
 	$result = '';
 	echo "[";
 		foreach ($arr as $key => $value) {
-			$result .= $key . ',';
+			$result .= $value . ',';
 		}
 		$result = rtrim($result,',');
 	echo $result;
