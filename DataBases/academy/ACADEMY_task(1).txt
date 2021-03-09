@@ -82,7 +82,15 @@ ACADEMY
 
 17.	Write a SQL query to find all employees that have manager, along with their manager and their address.
 
-		??????????????????????????????
+		SELECT 
+		CONCAT(e.`FirstName`,' ',e.`LastName`) AS EmployeeFullName,
+		CONCAT(m.`FirstName`,' ',m.`LastName`) AS Manager_Name,
+        	addresses.`AddressText` AS Manager_Address,
+        	towns.`Name` AS City
+		  FROM employees e 
+			JOIN employees m ON e.ManagerID = m.EmployeeID
+            		JOIN addresses ON m.AddressID = addresses.AddressID
+            		JOIN towns ON addresses.TownID = towns.TownID
 
 18.	Write a SQL query to find all departments and all town names as a single list.
 
@@ -94,7 +102,12 @@ ACADEMY
 
 19.	Write a SQL query to find all the employees and the manager for each of them along with the employees that do not have manager.
 
-		??????????????????????????????
+		SELECT 
+		CONCAT(e.`FirstName`,' ',e.`LastName`) AS EmployeeFullName,
+		CONCAT(m.`FirstName`,' ',m.`LastName`) AS Manager_Name
+		  FROM employees e 
+		  LEFT JOIN employees m 
+		    ON e.ManagerID = m.EmployeeID
 
 20.	Write a SQL query to find the names of all employees from the departments "Sales" and "Finance" whose hire year is between 1995 and 2005.
 
